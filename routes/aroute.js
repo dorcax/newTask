@@ -1,0 +1,10 @@
+const express=require("express")
+const router =express.Router()
+const{Reg,signup,Login,login,upload,artisanDashboard}=require("../controller/artisan")
+router.get("/signup",signup)
+// router.get("/index",artisanDashboard)
+router.post("/signup",upload.single("avatar"),Reg)
+router.get("/login",Login)
+router.post("/login", login)
+router.get("/index",artisanDashboard)
+module.exports =router

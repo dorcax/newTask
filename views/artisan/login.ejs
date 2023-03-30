@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+     <h6 style="color:green"><%=message%></h6>
+            <%- include("partials/nav.ejs") %>
+             <section class="section login-section">
+        <div class="main-section ">
+        
+            <div class="text">
+                 <h4>we bring clients and reputable</h4> 
+                <h4 class="service">service providers together</h4>
+               
+            </div>
+            <button class="btn">get your service listed</button>
+        </div>
+        <div class="services">
+     
+      <div class="container-login">
+          <h2>artisan login page</h2>
+           <form action="/login" method="post" class="login-fm">
+               <p><input type="text" name="username" id="" placeholder="username"></p>
+               <p><input type="text" name="password" id="" placeholder="password"></p>
+               <button>click to submit</button>
+           </form>
+      </div> 
+    
+     <%- include("partials/footer")%>
+</body>
+</html>

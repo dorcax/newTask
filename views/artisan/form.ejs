@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+       <h3 style="color:red"> <%= error_msg %></h3> 
+        <%- include("partials/nav.ejs") %>
+         <section class="section">
+        <div class="main-section">
+            <h1><%= message %></h1>
+            <div class="text">
+                 <h4>we bring clients and reputable</h4> 
+                <h4 class="service">service providers together</h4>
+               
+            </div>
+            <button class="btn">get your service listed</button>
+        </div>
+        <div class="services">
+    <form action="/signup" method="post" enctype="multipart/form-data">
+     <p><input type="text" name="contact_name" id="" placeholder="Contact name"></p>
+      <p> <input type="number" name="phone" id="" placeholder="contact phone number"></p>
+      <p> <input type="email" name="email" id="" placeholder="email"> </p>
+      <p><input type="text" name="business_name" id=""></p>
+      <p>Are you registered with CAC ? :
+         Yes <input type="radio" name="cacstatus" id="" value="yes">
+         No <input type="radio" name="cacstatus" id="" value="NO">
+      </p>
+      <p><input type="text" name="address" id="" placeholder="contact address"></p>
+      <p><input type="text" name="city" id="" placeholder="city"></p>
+      <p><input type="text" name="website_url" id="" placeholder="website url"></p>
+      <p><input type="text" name="username" id=""></p>
+      <p><input type="text" name="password" id=""></p> 
+      <p>upload file: <input type="file" name="avatar" id="">  </p>
+      
+    <button>submit</button>      
+    </form>
+     <%- include("partials/footer")%>
+</body>
+
+</html>
