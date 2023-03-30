@@ -116,8 +116,6 @@ body{
     position: absolute;
     left: 27.7%;
     /* margin-left: 10px; */
-    
-    
 }
 .services .sub-div{
     position: absolute;
@@ -260,3 +258,13 @@ body{
 
 
 /* end of footer section */
+
+/* KENNY */
+.services{
+    display: flex;
+    justify-content: center;
+}
+
+.sub-service  {
+    margin: 0 7px;
+}

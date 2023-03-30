@@ -21,7 +21,7 @@
             </div>
             <button class="btn">get your service listed</button>
         </div>
-        <div class="services">
+        <!-- <div class="services">
             <div class="option">
                 <% const category =["Fashion designer","Makeup-Artist","Rug Maker","Photographer","Event Planner","Cateer"] %>
                 <select name="category" id=""  class="slt">
@@ -43,12 +43,35 @@
                      <option value="<%= cities %>"><%=cities%></option>
                     <%} %>
                 </select>
+
                 <button class="search">search</button>
-
             </div>
-         
+        </div> -->
 
-        </div>
+<div class="services">
+    <div class="sub-service">
+        <select name="category" id=""  class="slt">
+            <option value="">What service do you need</option>
+                <% for (let cat of category){%>
+                    <option value="<%= cat %>"><%= cat %></option>
+                <%} %>
+        </select>
+    </div>
+
+    <div class="sub-service">
+        <select name="city" id="" class="city">
+            <option value="">Where ?</option>
+                <% for(let cities of city){%>
+                <option value="<%= cities %>"><%=cities%></option>
+                <%} %>
+        </select>
+    </div>
+
+    <div class="sub-service">
+        <button class="search-btn">Search</button> 
+    </div>
+</div>
+
         <div class="advert">
             <h4 class="here"> place your advert here</h4>
         </div>
